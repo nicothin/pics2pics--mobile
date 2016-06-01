@@ -86,8 +86,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-overflow-style: scrollbar;
   -ms-text-size-adjust: 100%;
-  min-width: 1280px;
-  min-height: 800px;
   site: be cool; // :)
 }
 
@@ -96,23 +94,15 @@ body {
   font-size: @font-size;
   line-height: unit(@line-height);
   color: @text-color;
-  background-color: #fff;
+  background-color: #b7ddeb;
   margin: 0;
-  min-width: 1000px;
-  min-height: 800px;
-  transition: background-color 1s;
+  text-align: center;
 }
 
 .main {
-  min-width: 1000px;
+  width: 320px;
   position: relative;
-  z-index: 10;
-  margin-bottom: 1px;
-}
-
-.subcalendar {
-  position: relative;
-  z-index: 20;
+  margin: auto;
 }
 
 a {
@@ -272,38 +262,38 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-blockquote {
-  padding: 0 0 0 0.5em;
-  margin-left: 0;
-  margin-right: 0;
-  border-left: 1px solid @border-color;
+// blockquote {
+//   padding: 0 0 0 0.5em;
+//   margin-left: 0;
+//   margin-right: 0;
+//   border-left: 1px solid @border-color;
 
-  @media (min-width: @screen-sm) {
-    padding: 0 0 0 1.8em;
-    margin-left: 0;
-    border-left-width: 5px;
-  }
+//   @media (min-width: @screen-sm) {
+//     padding: 0 0 0 1.8em;
+//     margin-left: 0;
+//     border-left-width: 5px;
+//   }
 
-  p,
-  ul,
-  ol {
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+//   p,
+//   ul,
+//   ol {
+//     &:first-child {
+//       margin-top: 0;
+//     }
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
 
-  footer {
-    text-align: right;
-    color: @gray;
+//   footer {
+//     text-align: right;
+//     color: @gray;
 
-    &:before {
-      content: '— ';
-    }
-  }
-}
+//     &:before {
+//       content: '— ';
+//     }
+//   }
+// }
 
 // code,
 // kbd,
@@ -349,19 +339,19 @@ blockquote {
 //   }
 // }
 
-.rub {
-  display: inline-block;
-  vertical-align: 0.1em;
-  font-size: 0;
-  color: transparent;
-  height: 21px;
-  width: 17px;
-  background: url(../img/rub.svg) center no-repeat;
-  background-size: auto 100%;
+// .rub {
+//   display: inline-block;
+//   vertical-align: 0.1em;
+//   font-size: 0;
+//   color: transparent;
+//   height: 21px;
+//   width: 17px;
+//   background: url(../img/rub.svg) center no-repeat;
+//   background-size: auto 100%;
 
-  &--big {
-    height: 34px;
-    width: 29px;
-    background: url(../img/rub-2.svg) center no-repeat;
-  }
-}
+//   &--big {
+//     height: 34px;
+//     width: 29px;
+//     background: url(../img/rub-2.svg) center no-repeat;
+//   }
+// }

@@ -60,7 +60,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 ::placeholder {
-  color: #2ac1a0;
+  color: #0044cc;
   opacity: 1;
 }
 
@@ -118,6 +118,7 @@ input[type='tel'] {
   padding: @field-padding-top @field-padding-horizontal @field-padding-bottom;
   text-align: center;
   transition: all 0.3s ease-out;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.35);
 }
 
 textarea,
@@ -138,10 +139,10 @@ input[readonly] {
   background-color: @gray-lighter;
 }
 
-select,
-textarea,
-input {
-  &:focus {
-    .focus();
-  }
-}
+// select,
+// textarea,
+// input {
+//   &:focus {
+//     .focus();
+//   }
+// }

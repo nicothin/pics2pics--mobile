@@ -1,0 +1,73 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/features/features.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.features {
+  position: relative;
+  padding-top: 172px;
+  background: url(../img/features-bg.jpg) 50% 50px no-repeat;
+  min-height: 1687px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67px;
+    height: 149px;
+    background: url(../img/top-pict.svg) 0 0 no-repeat;
+    background-size: 67px 149px;
+  }
+
+  &__item {
+    margin-bottom: 113px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    b {
+      display: block;
+      font-size: 25px;
+      line-height: 120%;
+      color: #0044cc;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+      padding: 0 40px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 25px;
+      color: #00044c;
+      letter-spacing: 0.22em;
+    }
+
+    &--large {
+      margin-top: -34px;
+
+      b {
+        color: #2ac1a0;
+        position: relative;
+        background: url(../img/stars.png) 50% 0 no-repeat;
+        padding-top: 96px;
+        padding-bottom: 8px;
+      }
+
+      p {
+        color: #fff;
+        margin-bottom: 27px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}

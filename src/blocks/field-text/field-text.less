@@ -4,52 +4,29 @@
 .field-text {
   display: block;
   margin: auto;
-  margin-bottom: 1.55em;
+  margin-bottom: 17px;
   text-align: center;
   text-transform: uppercase;
 
-  &--md {
-    width: 325px;
-  }
-
-  &--sm {
-    width: 260px;
-  }
-
-  &--sm2 {
-    width: 250px;
-  }
-
-  &--black {
-    .field-text__name {
-      color: #212121;
-    }
-
-    .field-text__input {
-      border-color: #FBC5FF;
-      .focus();
-    }
-
-    ::placeholder {
-      color: #212121;
-    }
-  }
-
   &__name {
     display: block;
-    margin-bottom: 0.4em;
+    margin-bottom: 4px;
     line-height: @line-height;
-    color: #0A1946;
-    font-size: 11px;
-    letter-spacing: 0.08em;
+    color: #212121;
+    font-size: 8px;
+    letter-spacing: 0.075em;
   }
 
-  &__input-wrap {}
+  &__input-wrap {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__input {
     text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.06em;
+    font-size: 9px;
+    letter-spacing: 0.075em;
 
     textarea& {
       min-height: (@line-height * 2) + @field-padding-top + @field-padding-bottom + .2; // .2 — поправка на бордюр

@@ -1,0 +1,37 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/page-header/page-header.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.page-header {
+  position: relative;
+  background: url(../img/promo-top-bg.png) 50% 0 no-repeat;
+  padding-top: 55px;
+  min-height: 479px;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    font-family: 'Fun City';
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 31px;
+    letter-spacing: -0.28em;
+    margin: 0 0 16px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #a1bfff;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
