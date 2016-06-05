@@ -36,7 +36,7 @@
 
   <header class="page-header">
     <span class="page-header__logo">
-      <img src="img/logo.png" height="46" width="46" alt="">
+      <img src="img/logo.png" height="92" width="91" alt="">
     </span>
     <h1 class="page-header__title">C вас<br>картинки<br>с&nbsp;нас картины</h1>
     <p class="page-header__descr">За 1 день делаем картину на холсте<br>и оперативно доставляем вам</p>
@@ -69,19 +69,19 @@
 
   <div class="features-mini">
     <div class="features-mini__item">
-      <img src="img/car-blue.svg" width="82" height="64" alt="">
+      <img class="features-mini__item-img-1" src="img/car-blue.svg" width="164" alt="">
       <b>ПОЛУЧИТЕ КАРТИНУ ВОВРЕМЯ!</b>
       <p>быстрая доставка курьером от 1 дня <br>175 пунктов выдачи в 64 городах</p>
     </div>
     <div class="features-mini__item">
-      <img src="img/like-blue.svg" width="57" height="68" alt="">
+      <img class="features-mini__item-img-2" src="img/like-blue.svg" width="114" alt="">
       <b>ПЛАТИТЕ ЗА РЕЗУЛЬТАТ!</b>
       <p>без предоплаты<br>оплата при получении</p>
     </div>
   </div>
 
   <div class="features">
-    <div class="features__item">
+    <div class="features__item  features__item--first">
       <b>ТОЛЬКО НАТУРАЛЬНЫЕ МАТЕРИАЛЫ</b>
       <p>хлопковый холст, <br>сосновый подрамник, <br>крафтовый скотч, <br>эко чернила</p>
     </div>
@@ -93,7 +93,7 @@
       <b>КРАСИВЫЙ И&nbsp;ПРОСТОЙ КРЕПЕЖ</b>
       <p>в комплекте <br>будет все, <br>чтобы очень легко <br>повесить картину</p>
     </div>
-    <div class="features__item  features__item--large">
+    <div class="features__item  features__item--girl">
       <b>ЗАЛОГ КРАСОТЫ И&nbsp;ДОЛГОЛЕТИЯ ВАШЕЙ КАРТИНЫ</b>
       <p>Наши чернила LUCIA EX <br>способны сохранять цвет <br>и насыщенность до 94 лет</p>
       <p>Благодаря <br>12-красочной печати <br>цвета на картине <br>будут яркими, <br>насыщенными <br>и глубокими</p>
@@ -109,7 +109,8 @@
         <div class="price__descr">ГОТОВАЯ КАРТИНА НА ПОДРАМНИКЕ <br>+ ЗАЩИТНЫЙ ЛАК</div>
       </div>
       <div class="price__size-demo">
-        <div class="price__size" style="width:30px;height:30px"></div>
+        <!-- ВНИМАНИЕ! демка картинки должна масштабироваться: ширина = XXpx * 100 / 640 + vw -->
+        <div class="price__size" style="width:9.375vw;height:9.375vw"></div> <!-- ВНИМАНИЕ! начиная с вьюпорта 640 это 60×60 пикселей -->
       </div>
     </div>
     <div class="price__size-select">
