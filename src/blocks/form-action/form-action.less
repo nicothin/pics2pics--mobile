@@ -4,26 +4,43 @@
 
 
 .form-action {
-  padding-bottom: 59px;
+  padding-bottom: 18.437vw;
+
+  @media (min-width: @screen-md) {
+    padding-bottom: 118px;
+  }
 
   &__title {
-    margin: 0 0 7px;
-    font-size: 12px;
-    line-height: 19px;
+    margin: 0 0 2.187vw;
+    font-size: 3.75vw;
+    line-height: 1.583;
     letter-spacing: 0.1em;
     color: #0044cc;
     text-transform: uppercase;
+
+    @media (min-width: @screen-md) {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
   }
 
   &__descr {
     position: relative;
     margin: 0;
-    font-size: 12px;
-    line-height: 21px;
+    font-size: 3.75vw;
+    line-height: 1.75;
     letter-spacing: 0.14em;
     color: #00044c;
-    padding-bottom: 85px;
+    padding-bottom: 26.562vw;
     background: url(../img/smile-support.png) 50% 100% no-repeat;
-    margin-bottom: 20px;
+    background-size: 23.593vw auto;
+    margin-bottom: 6.25vw;
+
+    @media (min-width: @screen-md) {
+      font-size: 24px;
+      padding-bottom: 170px;
+      margin-bottom: 40px;
+      background-size: 151px auto;
+    }
   }
 }

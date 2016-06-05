@@ -5,18 +5,28 @@
 
 .mini-promo {
   text-transform: uppercase;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 4.062vw;
+  line-height: 1.6;
   color: #00044c;
   letter-spacing: 0.04em;
-  padding-top: 8px;
-  margin-bottom: 20px;
+  padding-top: 2.5vw;
+  margin-bottom: 6.35vw;
+
+  @media (min-width: @screen-md) {
+    font-size: 26px;
+    padding-top: 16px;
+    margin-bottom: 40px;
+  }
 
   &__delir-1,
   &__delir-2,
   &__delir-3,
   &__delir-4 {
-    font-size: 15px;
+    font-size: 4.687vw;
+
+    @media (min-width: @screen-md) {
+      font-size: 30px;
+    }
   }
 
    &__delir-1 {
@@ -37,6 +47,10 @@
 
   &__delir-5 {
     display: block;
-    padding-top: 4px;
+    padding-top: 2.5vw;
+
+    @media (min-width: @screen-md) {
+      padding-top: 16px;
+    }
   }
 }

@@ -5,15 +5,30 @@
 
 .page-header {
   position: relative;
-  background: url(../img/promo-top-bg.png) 50% 0 no-repeat;
-  padding-top: 55px;
-  min-height: 479px;
+  background: url(../img/promo-top-bg.png) 50% 100% no-repeat;
+  background-size: 100vw auto;
+  padding-top: 17.187vw;
+  min-height: 149.531vw;
+
+  @media (min-width: @screen-md) {
+    min-height: 957px;
+    padding-top: 110px;
+    background-size: 640px 958px;
+  }
 
   &__logo {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    img {
+      width: 14.275vw;
+
+      @media (min-width: @screen-md) {
+        width: 92px;
+      }
+    }
   }
 
   &__title {
@@ -21,17 +36,26 @@
     color: #fff;
     text-transform: uppercase;
     line-height: 1;
-    font-size: 31px;
+    font-size: 9.843vw;
     letter-spacing: -0.28em;
-    margin: 0 0 16px;
+    margin: 0 0 5.468vw;
+
+    @media (min-width: @screen-md) {
+      font-size: 63px;
+      margin: 0 0 35px;
+    }
   }
 
   &__descr {
     margin: 0;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 4.062vw;
+    line-height: 1.423em;
     color: #a1bfff;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+
+    @media (min-width: @screen-md) {
+      font-size: 26px;
+    }
   }
 }

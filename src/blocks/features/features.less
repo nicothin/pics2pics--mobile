@@ -5,24 +5,23 @@
 
 .features {
   position: relative;
-  padding-top: 172px;
-  background: url(../img/features-bg.jpg) 50% 50px no-repeat;
-  min-height: 1687px;
+  background: url(../img/features-bg.jpg) 50% 17.968vw no-repeat;
+  background-size: 100vw auto;
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 67px;
-    height: 149px;
-    background: url(../img/top-pict.svg) 0 0 no-repeat;
-    background-size: 67px 149px;
+  @media (min-width: @screen-md) {
+    background-position: 50% 115px;
+    background-size: 640px auto;
   }
 
   &__item {
-    margin-bottom: 113px;
+    margin-bottom: 35.312vw;
+    position: relative;
+
+    @media (min-width: @screen-md) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 226px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -30,38 +29,88 @@
 
     b {
       display: block;
-      font-size: 25px;
+      font-size: 7.812vw;
       line-height: 120%;
       color: #0044cc;
       letter-spacing: 0.1em;
       font-weight: 400;
-      padding: 0 40px;
+      padding: 0 12.5vw;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin: 0 auto 5.625vw;
+      max-width: 640px;
+
+
+      @media (min-width: @screen-md) {
+        font-size: 50px;
+        padding: 0 80px;
+        margin-bottom: 36px;
+      }
     }
 
     p {
       margin: 0;
-      font-size: 17px;
-      line-height: 25px;
+      font-size: 5.312vw;
+      line-height: 1.471em;
       color: #00044c;
       letter-spacing: 0.22em;
+
+      @media (min-width: @screen-md) {
+        font-size: 34px;
+      }
     }
 
-    &--large {
-      margin-top: -34px;
+    &--first {
+      padding-top: 56.562vw;
+
+      @media (min-width: @screen-md) {
+        padding-top: 362px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2.812vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../img/top-pict.svg) 0 0 no-repeat;
+        width: 20.937vw;
+        height: 46.562vw;
+        background-size: 20.937vw 46.562vw;
+
+        @media (min-width: @screen-md) {
+          top: 18px;
+          width: 134px;
+          height: 298px;
+          background-size: 134px 298px;
+        }
+      }
+    }
+
+    &--girl {
+      margin-top: -10.625vw;
+      padding-bottom: 35.937vw;
+
+      @media (min-width: @screen-md) {
+        margin-top: -68px;
+        padding-bottom: 230px;
+      }
 
       b {
         color: #2ac1a0;
         position: relative;
         background: url(../img/stars.png) 50% 0 no-repeat;
-        padding-top: 96px;
-        padding-bottom: 8px;
+        background-size: 48.281vw auto;
+        padding: 30vw 1.562vw 2.5vw !important;
+
+        @media (min-width: @screen-md) {
+          background-size: 309px auto;
+          padding: 192px 10px 16px !important;
+        }
       }
 
       p {
         color: #fff;
-        margin-bottom: 27px;
+        margin-bottom: 54px;
 
         &:last-child {
           margin-bottom: 0;
