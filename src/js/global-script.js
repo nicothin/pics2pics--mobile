@@ -5,6 +5,7 @@ jQuery( document ).ready(function($) {
     $('.price__sizes-item').removeClass('price__sizes-item--active');
     $(this).addClass('price__sizes-item--active');
     resizePriceSizeDemo();
+    $('#price-num').text( $('.price__sizes-item--active').data('price') );
   });
 
   resizePriceSizeDemo();
