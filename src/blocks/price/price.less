@@ -4,12 +4,12 @@
 
 
 .price {
-  padding-top: 4.375vw;
-  margin-bottom: 6.875vw;
+  padding-top: 6.25vw;
+  margin-bottom: 4.062vw;
 
   @media (min-width: @screen-md) {
-    padding-top: 28px;
-    margin-bottom: 44px;
+    padding-top: 40px;
+    margin-bottom: 26px;
   }
 
   &__line {
@@ -27,15 +27,13 @@
 
   &__num-line-wrapper {
     font-size: 14.062vw;
-    line-height: 120%;
+    line-height: 1;
     color: #fa645a;
-    width: 65vw;
-    margin-bottom: 1.562vw;
+    width: 60.937vw;
 
     @media (min-width: @screen-md) {
       font-size: 90px;
-      width: 416px;
-      margin-bottom: 10px;
+      width: 390px;
     }
 
     strong {
@@ -44,29 +42,35 @@
   }
 
   &__descr {
-    font-size: 2.5vw;
-    line-height: 1.25;
+    font-size: 2.812vw;
+    line-height: 1.556;
     color: #212121;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.19em;
     text-transform: uppercase;
     text-align: left;
 
     @media (min-width: @screen-md) {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
+  &__varnish {
+    display: block;
+    color: #304ffe;
+  }
+
   &__size-demo {
-    height: 27.5vw;
+    height: 27.781vw;
     flex-grow: 1;
-    margin-top: 1.562vw;
+    padding-top: 1.562vw;
     position: relative;
     background: url(../img/girl.png) 0 0 no-repeat;
-    background-size: auto 99%;
+    background-size: auto 27.343vw;
 
     @media (min-width: @screen-md) {
-      height: 176px;
-      margin-top: 10px;
+      height: 175px;
+      padding-top: 10px;
+      background-size: auto 175px;
     }
   }
 
@@ -134,6 +138,20 @@
       @media (min-width: @screen-md) {
         padding-right: 2px;
       }
+    }
+  }
+
+  &__sizes-descr {
+    margin: 0;
+    line-height: 1.556;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.19em;
+    margin-top: 5.625vw;
+
+    @media (min-width: @screen-md) {
+      font-size: 18px;
+      margin-top: 36px;
     }
   }
 }
